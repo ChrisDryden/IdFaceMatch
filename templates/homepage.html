@@ -1,0 +1,16 @@
+{% extends "header.html" %}
+{% extends "navigation_bar.html" %}
+{% block body %}
+
+<form action="/login" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<input type="submit" value="Log in" class="btn btn-primary btn-large btn-block" >
+			</div>
+		</div>
+	</div>
+</form>
+
+
+{% endblock %}

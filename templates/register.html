@@ -1,0 +1,46 @@
+{% include "header.html" %}
+
+{% block body %}
+{% if session['logged_in'] %}
+<p>You're logged in already!</p>
+{% else %}
+ 
+
+<form action="/upload" method="POST" enctype="multipart/form-data">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<h1>FaceMatch Image Upload</h1>
+				<h1>Submitters</h1>
+				{% if submitted %}
+				Thanks for Submitting!
+				{% endif %}
+			</div>
+ 
+			<div class="login-form">
+
+				<div class="control-group">
+				<input type="text" class="login-field" value="" placeholder="Email Address" name="email">
+				<label class="login-field-icon fui-user" for="login-name"></label>
+				</div>
+
+
+
+
+				<div>
+				<h2>Upload Image Here</h2> 
+				<input type="file" name="image">
+      			 
+				</div>
+			
+ 
+                <input type="submit" value="Submit Info" class="btn btn-primary btn-large btn-block" >
+			    <br>
+
+			</div>
+		</div>
+	</div>
+</form>		
+ 
+{% endif %}
+{% endblock %}
