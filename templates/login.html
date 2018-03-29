@@ -7,33 +7,31 @@
 <form action="/login" class="login" method="POST">
 	<div class="login-screen">
 		<div class="app-title">
-			<h1>NutHouse Invitational 5</h1>
-			<h1>Login</h1>
+			<h1>FaceMatch Image Upload</h1>
 			<p>{{response}}</p>
 		</div>
 
-		<div class="login-form">
-			<div class="control-group">
-			<input type="text" class="login-field" value="" placeholder="username" name="username">
-			<label class="login-field-icon fui-user" for="login-name"></label>
-			</div>
-
-			<div class="control-group">
-			<input type="password" class="login-field" value="" placeholder="password" name="password">
-			<label class="login-field-icon fui-lock" for="login-pass"></label>
-			</div>
-
-            <input type="submit" value="Log in" class="btn btn-primary btn-large btn-block" >
-		    <br>
-		</div>
 	</div>
 </form>
+
+<form action="/service" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<input type="submit" value="Search for Faces" class="btn btn-primary btn-large btn-block" >
+			</div>
+		</div>
+	</div>
+</form>		
+
+
+
 
 <form action="/register" method="POST">
 	<div class="login">
 		<div class="login-screen">
 			<div class="app-title">
-				<input type="submit" value="Register" class="btn btn-primary btn-large btn-block" >
+				<input type="submit" value="Upload Face" class="btn btn-primary btn-large btn-block" >
 			</div>
 		</div>
 	</div>
