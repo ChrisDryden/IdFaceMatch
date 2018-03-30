@@ -11,7 +11,7 @@ from scipy.spatial import distance
 app = Flask(__name__)
 
 working_dir = os.getcwd() 
-UPLOAD_FOLDER = working_dir + '\\upload'
+UPLOAD_FOLDER = working_dir + '/upload'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
  
